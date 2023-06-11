@@ -1,0 +1,38 @@
+[
+  {
+    "img": "./img/flop.jpeg",
+    "title": "FLOP",
+    "artist": "Salmo",
+    "year": "2021"
+  },
+  {
+    "img": "./img/playlist.jpeg",
+    "title": "Playlist",
+    "artist": "Salmo",
+    "year": "2018"
+  },
+  {
+    "img": "./img/hellvisback.jpeg",
+    "title": "Salmo",
+    "artist": "Hellvisback",
+    "year": "2016"
+  },
+  {
+    "img": "./img/midnite.jpeg",
+    "title": "Midnite",
+    "artist": "Salmo",
+    "year": "2013"
+  },
+  {
+    "img": "./img/death-usb.jpeg",
+    "title": "Death USB",
+    "artist": "Salmo",
+    "year": "2012"
+  },
+  {
+    "img": "./img/chainsaw-massacre.jpeg",
+    "title": "The Islad Chainsaw Massacre",
+    "artist": "Salmo",
+    "year": "2011"
+  }
+]
