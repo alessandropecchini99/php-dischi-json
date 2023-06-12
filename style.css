@@ -64,7 +64,7 @@ p {
 
 /* MORE INFO */
 .moreInfo {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 50px;
   bottom: 0;
@@ -82,7 +82,7 @@ p {
   height: 90%;
   margin-inline: auto;
   border-radius: 10px;
-  background-color: rgba(38, 38, 38, 0.85);
+  background-color: rgba(38, 38, 38, 0.89);
   color: white;
 }
 
@@ -106,6 +106,6 @@ p {
 }
 
 /* CLASSI LOGICHE */
-.active {
+/* .active {
   display: block;
-}
+} */

@@ -3,27 +3,27 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      message: "Hello Vue!",
       arrMusic: [],
-      activeIndex: 0,
-      moreinfoShow: false,
+      server: "http://localhost:8888/-php-proj/php-dischi-json/data.php",
+      showDisc: null,
     };
   },
   methods: {
-    requestData() {
-      axios
-        .get("http://localhost:8888/-php-proj/php-dischi-json/data.php")
-        .then((response) => (this.arrMusic = response.data));
+    hideInfo() {
+      this.showDisc = null;
     },
-    changeIndex(index) {
-      this.activeIndex = index;
-      console.log("activeIndex: " + this.activeIndex);
-
-      this.moreinfoShow = true;
-      console.log("moreInfo show: " + this.moreinfoShow);
+    showInfo(index) {
+      axios
+        .get(this.server, {
+          // server.php?disc=2
+          params: {
+            disc: index,
+          },
+        })
+        .then((response) => (this.showDisc = response.data));
     },
   },
   created() {
-    this.requestData();
+    axios.get(this.server).then((response) => (this.arrMusic = response.data));
   },
 }).mount("#app");
